@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Forever ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Floating Hearts Background -->
+<div class="hearts"></div>
+
+<!-- Music -->
+<audio autoplay loop>
+    <source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Happy Valentine’s Day ❤️</h1>
+    <p>You are my today, my tomorrow & my forever</p>
+    <a href="#story" class="scroll-btn">Our Story ↓</a>
+</section>
+
+<section class="section countdown">
+    <h2>Countdown to Valentine’s Day 💘</h2>
+    <div id="timer">
+        <div><span id="days">00</span><small>Days</small></div>
+        <div><span id="hours">00</span><small>Hours</small></div>
+        <div><span id="minutes">00</span><small>Minutes</small></div>
+        <div><span id="seconds">00</span><small>Seconds</small></div>
+    </div>
+</section>
+
+
+<section class="section">
+    <h2>Our Beautiful Moments 💞</h2>
+
+    <div class="cinematic-slider">
+
+        <div class="slides">
+            <img src="images/1.jpg" class="slide active">
+            <img src="images/2.jpg" class="slide">
+            <img src="images/3.jpg" class="slide">
+            <img src="images/4.jpg" class="slide">
+        </div>
+
+        <div class="love-overlay">
+            <span>Tarun ❤️ Nandini</span>
+        </div>
+
+        <div class="sparkles"></div>
+
+    </div>
+</section>
+
+
+<!-- Love Story Timeline -->
+<section id="story" class="section timeline">
+    <h2>Our Love Story 💕</h2>
+
+    <div class="event">
+        <span>🌸</span>
+        <p><strong>The Day We Met</strong><br>That moment changed my life forever.</p>
+    </div>
+
+    <div class="event">
+        <span>💬</span>
+        <p><strong>First Conversation</strong><br>Hours felt like minutes with you.</p>
+    </div>
+
+    <div class="event">
+        <span>💖</span>
+        <p><strong>Falling in Love</strong><br>I didn’t plan it, my heart did.</p>
+    </div>
+
+    <div class="event">
+        <span>🌍</span>
+        <p><strong>Every Day With You</strong><br>Feels like home.</p>
+    </div>
+</section>
+
+<!-- Love Letter Section -->
+<section class="section letter">
+    <h2>My Love Letter 💌</h2>
+    <p>
+        My love,<br><br>
+        Every smile of yours brightens my darkest days.  
+        Every moment with you is a memory I want to keep forever.  
+        This website is my small way of saying  
+        <strong>I choose you, every single day ❤️</strong>
+    </p>
+</section>
+
+<section class="section gallery">
+    <h2>Gallery of Our Universe 📸</h2>
+
+    <div class="orbit-gallery">
+
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        <img src="images/4.jpg">
+        <img src="images/5.jpg">
+        <img src="images/6.jpg">
+
+    </div>
+</section>
+
+
+<!-- Reasons Section -->
+<section class="section reasons">
+    <h2>Why Nandini Is So Special To Me 💗</h2>
+
+    <div class="reasons-container">
+
+        <div class="reason-card">
+            <div class="reason-front">💞 Your Smile</div>
+            <div class="reason-back">
+                Your smile instantly fixes my worst days and makes life brighter.
+            </div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-front">🌸 Your Kindness</div>
+            <div class="reason-back">
+                The way you care for people shows how pure your heart is.
+            </div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-front">💫 You Believe In Me</div>
+            <div class="reason-back">
+                You give me strength when I doubt myself.
+            </div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-front">🌹 You Make Life Beautiful</div>
+            <div class="reason-back">
+                Every moment feels special when I am with you.
+            </div>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-front">❤️ Simply You</div>
+            <div class="reason-back">
+                I don't need any reason. Loving you just feels natural.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Surprise Section -->
+<section class="section surprise">
+    <h2>Special Memories With You 💞</h2>
+
+    <div class="memory-container">
+
+        <div class="memory-card" onclick="showMemoryImage('images/N.jpg')">
+         First Meet🥰
+        </div>
+
+        <div class="memory-card" onclick="showMemoryImage('videos/N.mp4')">
+            Nandini CUTUUUU❤️
+        </div>
+
+    </div>
+
+    <!-- Image Display Area -->
+    <div id="memoryImageBox" class="memory-image-box"></div>
+
+</section>
+
+<section class="section">
+    <h2>One Last Surprise For You ❤️</h2>
+
+    <a href="propose.html" class="next-page-btn">
+        Click For Final Surprise 💌
+    </a>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>Made with ❤️ by <strong>Your Love</strong></p>
+</footer>
+<div id="proposalPopup" class="popup">
+    <div class="popup-content">
+
+        <h2 id="proposalText">Will You Be My Valentine Forever ❤️</h2>
+
+        <button id="yesBtn" class="yes" onclick="acceptProposal()">
+            YES 💖
+        </button>
+
+        <button id="noBtn" class="no" onclick="handleNoClick()">
+            NO 😜
+        </button>
+
+    </div>
+</div>
+
+<div id="proposalPopup" class="popup">
+
+<script src="script.js"></script>
+</body>
+</html>
